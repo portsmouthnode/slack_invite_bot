@@ -1,0 +1,1 @@
+define({  "name": "slack_invite_bot",  "version": "0.1.0",  "description": "Invite users to the Portsmouth Node Slack channel",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2016-11-24T01:47:28.871Z",    "url": "http://apidocjs.com",    "version": "0.16.1"  }});

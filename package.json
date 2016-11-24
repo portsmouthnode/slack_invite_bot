@@ -1,10 +1,11 @@
 {
   "name": "slack_invite_bot",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.1.0",
+  "description": "Invite users to the Portsmouth Node Slack channel",
   "keywords": [],
   "dependencies": {
+    "apidoc": "^0.16.1",
     "ejs": "2.3.4",
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.0.0",
@@ -25,7 +26,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "apidoc": "apidoc -i api/controllers -o assets/docs"
   },
   "main": "app.js",
   "repository": {
