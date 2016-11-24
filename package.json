@@ -1,0 +1,15 @@
+{
+  "name": "portsmouth_node_slack_invite_bot",
+  "version": "1.0.0",
+  "description": "Site which sends out an invite to the Portsmouth NodeJS Slack channel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "slack"
+  ],
+  "author": "Kevin C Gall",
+  "license": "ISC"
+}
