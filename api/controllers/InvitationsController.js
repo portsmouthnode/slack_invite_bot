@@ -1,7 +1,7 @@
 module.exports = {
 
 /**
- * @api {get} /api/invitations Request an invitation to the Slack Channel
+ * @api {post} /api/invitations Request an invitation to the Slack Channel
  * @apiName CreateInvitation
  * @apiGroup Invitations
  *
