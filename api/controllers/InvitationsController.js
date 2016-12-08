@@ -1,3 +1,4 @@
+
 module.exports = {
 
 /**
@@ -8,9 +9,16 @@ module.exports = {
  * @apiParam {String} email Email address for the invite.
  *
  * @apiSuccess {String} msg Success confirmation message
+ * @apiError {String} err Error message
  */
 	create: function(req, res){
-		sails.log.info("invite sent");
-		res.status(200).json({"it": "worked"});
+    SlackApiService.sendInvite({email: req.body.email}, function(err, statusCode, slackResponse){
+      if (err){
+        return res.status(statusCode).json({"err": err});
+      }
+
+    //respond with the returned status code and slack's response
+      res.status(statusCode).json(slackResponse);
+    });
 	}
 };

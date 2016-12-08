@@ -10,6 +10,8 @@
  *
  */
 
+const slackApiKey = require('../../apikey');
+
 module.exports = {
 
   /***************************************************************************
@@ -20,5 +22,7 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
+
+  slack: slackApiKey
 
 };

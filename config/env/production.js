@@ -10,6 +10,8 @@
  *
  */
 
+const slackApiKey = require('../../apikey');
+
 module.exports = {
 
   /***************************************************************************
@@ -34,5 +36,7 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
+
+  slack: slackApiKey
 
 };
