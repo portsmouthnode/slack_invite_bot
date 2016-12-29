@@ -45,6 +45,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'POST /api/invitations': 'InvitationsController.create'
+  'POST /api/invitations': 'InvitationsController.create',
+  'GET /api/invitations': 'InvitationsController.getAll'
 
 };
